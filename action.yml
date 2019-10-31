@@ -1,0 +1,15 @@
+name: 'Commit Checker'
+description: 'Check if commit has a desired substring'
+inputs:
+  check-string:
+    description: 'String to check'
+    required: true
+  commits:
+    description: 'List of commit messages'
+    required: true
+outputs:
+  should-build: 
+    description: 'Whether or not a build and deploy should run'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
