@@ -1,0 +1,23 @@
+{
+  "name": "commit-message-checker",
+  "version": "1.0.0",
+  "description": "yes",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@actions/core": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalavosus/commit-message-checker.git"
+  },
+  "author": "jalavosus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jalavosus/commit-message-checker/issues"
+  },
+  "homepage": "https://github.com/jalavosus/commit-message-checker#readme"
+}
