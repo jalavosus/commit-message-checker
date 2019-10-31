@@ -2,7 +2,7 @@ const core = require('@actions/core');
 
 try {
   let checkString = core.getInput('check-string')
-  let commitsList = core.getInput('commits')
+  let commitsList = JSON.parse(core.getInput('commits'))
 
   let lastCommit = commitsList[commitsList.length-1]
 
