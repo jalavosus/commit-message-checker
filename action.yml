@@ -8,7 +8,7 @@ inputs:
     description: 'List of commit messages'
     required: true
 outputs:
-  checkSkip: 
+  shouldBuild: 
     description: 'Whether or not a build and deploy should run'
 runs:
   using: 'node12'
