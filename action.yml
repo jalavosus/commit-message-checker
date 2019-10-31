@@ -3,10 +3,8 @@ description: 'Check if commit has a desired substring'
 inputs:
   check-string:
     description: 'String to check'
-    required: true
   commits:
     description: 'List of commit messages'
-    required: true
 outputs:
   shouldBuild: 
     description: 'Whether or not a build and deploy should run'
