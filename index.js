@@ -9,6 +9,8 @@ try {
   let foundString = lastCommit.message.includes(checkString)
 
   core.setOutput('checkSkip', foundString)
+
+  console.log(`Output: ${foundString}`)
 } catch (error) {
   core.setFailed(error.message)
 }
