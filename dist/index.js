@@ -143,9 +143,20 @@ try {
 
   let foundString = lastCommit.message.includes(checkString)
 
-  core.setOutput('checkSkip', foundString)
+  let result = ""
 
-  console.log(`Output: ${foundString}`)
+  switch (foundString) {
+    case true:
+      result = "true"
+      break
+    case false:
+      result = "false"
+      break
+  }
+
+  core.setOutput('checkSkip', result)
+
+  console.log(`Output: ${result}`)
 } catch (error) {
   core.setFailed(error.message)
 }
