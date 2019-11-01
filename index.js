@@ -19,9 +19,7 @@ try {
       break
   }
 
-  core.setOutput('checkSkip', result)
-
-  console.log(`Output: ${result}`)
+  core.setOutput('shouldBuild', result)
 } catch (error) {
   core.setFailed(error.message)
 }
