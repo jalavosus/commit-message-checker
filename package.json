@@ -4,7 +4,7 @@
   "description": "yes",
   "main": "dist/index.js",
   "dependencies": {
-    "@actions/core": "^1.2.0"
+    "@actions/core": "^1.9.1"
   },
   "devDependencies": {},
   "scripts": {
